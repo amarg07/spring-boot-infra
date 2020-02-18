@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
         - name: spring-boot
-          image: gcr.io/gcp-brightlab/image_to_be_replace
+          image: gcr.io/gcp-brightlab/amar-poc/image_to_be_replace
           ports:
             - containerPort: 4000
