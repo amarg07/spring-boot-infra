@@ -12,13 +12,5 @@ spec:
       containers:
         - name: spring-boot
           image: gcr.io/gcp-brightlab/amar-poc/image_to_be_replace
-          volumeMounts: 
-          - mountPath: /spring-boot
-            name: spring-boot-vol
           ports:
             - containerPort: 4000
-      volumes:
-        - name: spring-boot-vol
-          gcePersistentDisk:
-            pdName: jenkins-test
-            fsType: ext4
